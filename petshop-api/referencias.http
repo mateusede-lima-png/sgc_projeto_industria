@@ -1,0 +1,25 @@
+### Cadastro de Tutor
+POST http://localhost:3000/tutores
+Content-Type: application/json
+
+{
+    "nome": "Mateus",
+    "telefone": "(48)99999-9999"
+}
+
+###
+
+### Agendar Consulta
+POST http://localhost:3000/consultas
+Content-Type: application/json
+
+{
+    "data": "2026-07-01 15:00",
+    "tutorId": 1
+}
+
+###
+
+### Cancelar Consulta
+PUT http://localhost:3000/consultas/1
+Content-Type: application/json
